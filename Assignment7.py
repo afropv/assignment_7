@@ -3,9 +3,12 @@
 dict={}
 for i in range (1,6):
     key=i
-    value=input("Enter Value :- ")
+    value=(input("Enter Value :- "))
     dict[key]=value
-print(dict)
+x=(input("Enter Value whose Key is to be found :- "))
+for key , value in dict.items():
+    if value==x:
+        print("The Key of the Value %s is %s" %(value , key))    
 
 #Q.2- Create a dictionary and store student names and create nested dictionary to store the subject wise marks of every student.Print the marks of a given student from that dictionary for every subject.
 
